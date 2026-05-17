@@ -1,0 +1,9 @@
+data/
+db/*.db
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+notebooks/scratch/
+reports/*.pdf
+docs/internal/
