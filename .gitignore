@@ -7,3 +7,4 @@ __pycache__/
 notebooks/scratch/
 reports/*.pdf
 docs/internal/
+.virtual_documents/

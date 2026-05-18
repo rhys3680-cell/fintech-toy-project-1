@@ -39,7 +39,8 @@
 
 | 분야 | 도구 |
 |---|---|
-| 언어 | Python 3.12, SQL |
+| 언어 | Python 3.13, SQL |
+| 분석 환경 | JupyterLab |
 | 데이터 | pandas, numpy |
 | DB | SQLite |
 | ML | scikit-learn, XGBoost, imbalanced-learn |
