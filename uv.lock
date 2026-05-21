@@ -535,6 +535,7 @@ dependencies = [
 dev = [
     { name = "ipython" },
     { name = "jupyterlab-lsp" },
+    { name = "kaggle" },
     { name = "python-lsp-server", extra = ["all"] },
 ]
 
@@ -556,6 +557,7 @@ requires-dist = [
 dev = [
     { name = "ipython", specifier = ">=9.13.0" },
     { name = "jupyterlab-lsp", specifier = ">=5.3.0" },
+    { name = "kaggle", specifier = ">=2.1.2" },
     { name = "python-lsp-server", extras = ["all"], specifier = ">=1.14.0" },
 ]
 
@@ -1067,6 +1069,56 @@ wheels = [
 ]
 
 [[package]]
+name = "jupytext"
+version = "1.19.3"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "markdown-it-py" },
+    { name = "mdit-py-plugins" },
+    { name = "nbformat" },
+    { name = "packaging" },
+    { name = "pyyaml" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/ef/2d/15624c3d9440d85a280ff13d2d23afd989802f25470ac59932f4fef6f0c6/jupytext-1.19.3.tar.gz", hash = "sha256:713c3ed4441afe0f31474d28ea2e6b61a268c04c40fd78e5ccfd7f7ac9e9f766", size = 4305350, upload-time = "2026-05-17T09:09:29.294Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/aa/ec/d9be3bd1db141e76b2f525c265f70e66edd30a51a3307d8edf0ef1909c54/jupytext-1.19.3-py3-none-any.whl", hash = "sha256:acf75492f80895ad8e664fd8db1708b617008dd0e71c341a1abc3d0d07310ed0", size = 170579, upload-time = "2026-05-17T09:09:27.478Z" },
+]
+
+[[package]]
+name = "kaggle"
+version = "2.1.2"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "bleach" },
+    { name = "jupytext" },
+    { name = "kagglesdk" },
+    { name = "packaging" },
+    { name = "protobuf" },
+    { name = "python-dateutil" },
+    { name = "python-slugify" },
+    { name = "requests" },
+    { name = "tqdm" },
+    { name = "urllib3" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/a3/86/0a8e8459c91577ded8d4baeb258dfa37aaf5168bb0427ae7bf66da53f46b/kaggle-2.1.2.tar.gz", hash = "sha256:492fbfc6d1df958aeaa8e415781996e62db5db734266acf9575eaf5626919fb4", size = 172561, upload-time = "2026-05-06T16:40:53.621Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/e2/0e/a7dc4eb9171d841b7a9e5be1f9e9e70bd9fce63d3ba5770a6c3c17dc5276/kaggle-2.1.2-py3-none-any.whl", hash = "sha256:c4391459af6a10ca350b183f18c5f0d8748dd242c34397ba8b59510ecefd319e", size = 110195, upload-time = "2026-05-06T16:40:52.168Z" },
+]
+
+[[package]]
+name = "kagglesdk"
+version = "0.1.23"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "protobuf" },
+    { name = "requests" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/89/7f/80d1910fbb42d59e5845c16affa8496302a3334360e23d70c2adf492b31c/kagglesdk-0.1.23.tar.gz", hash = "sha256:62e89ae21ae29495e7e597d6160f378efcb0c8734a8c10eaf7f7607a60ac1f25", size = 164193, upload-time = "2026-05-01T15:49:16.666Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/8f/4e/fead499e4e76f66203611ecee1032fc8da87f2ab59c3921c76b06334cbbf/kagglesdk-0.1.23-py3-none-any.whl", hash = "sha256:8966f7d99f59f2b769681e19a2cf52192b23be053de6875c06e66cd85c4f1dd1", size = 217784, upload-time = "2026-05-01T15:49:15.291Z" },
+]
+
+[[package]]
 name = "kiwisolver"
 version = "1.5.0"
 source = { registry = "https://pypi.org/simple" }
@@ -1272,6 +1324,18 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/e7/ff/0ffefdcac38932a54d2b5eed4e0ba8a408f215002cd178ad1df0f2806ff8/mccabe-0.7.0.tar.gz", hash = "sha256:348e0240c33b60bbdf4e523192ef919f28cb2c3d7d5c7794f74009290f236325", size = 9658, upload-time = "2022-01-24T01:14:51.113Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/27/1a/1f68f9ba0c207934b35b86a8ca3aad8395a3d6dd7921c0686e23853ff5a9/mccabe-0.7.0-py2.py3-none-any.whl", hash = "sha256:6c2d30ab6be0e4a46919781807b4f0d834ebdd6c6e3dca0bda5a15f863427b6e", size = 7350, upload-time = "2022-01-24T01:14:49.62Z" },
+]
+
+[[package]]
+name = "mdit-py-plugins"
+version = "0.6.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "markdown-it-py" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/59/fc/f8d0863f8862f25602c0404d75568e89fb6b4109804645e5cdfb1be5cf56/mdit_py_plugins-0.6.1.tar.gz", hash = "sha256:a2bca0f039f39dbd35fb74ae1b5f998608c437463371f0ff7f49a19a17a114d0", size = 56114, upload-time = "2026-05-13T09:03:38.91Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/a5/69/6da5581c6a7fede7dc261bf4e67d6adca4196f176b43288b55b3db395b6e/mdit_py_plugins-0.6.1-py3-none-any.whl", hash = "sha256:214c82fb2ac524472ab6a5bcab1de80f73b50443e187f401bfd77efbc7c6481d", size = 66663, upload-time = "2026-05-13T09:03:37.76Z" },
 ]
 
 [[package]]
@@ -1844,6 +1908,18 @@ all = [
 ]
 
 [[package]]
+name = "python-slugify"
+version = "8.0.4"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "text-unidecode" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/87/c7/5e1547c44e31da50a460df93af11a535ace568ef89d7a811069ead340c4a/python-slugify-8.0.4.tar.gz", hash = "sha256:59202371d1d05b54a9e7720c5e038f928f45daaffe41dd10822f3907b937c856", size = 10921, upload-time = "2024-02-08T18:32:45.488Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/a4/62/02da182e544a51a5c3ccf4b03ab79df279f9c60c5e82d5e8bec7ca26ac11/python_slugify-8.0.4-py2.py3-none-any.whl", hash = "sha256:276540b79961052b66b7d116620b36518847f52d5fd9e3a70164fc8c50faa6b8", size = 10051, upload-time = "2024-02-08T18:32:43.911Z" },
+]
+
+[[package]]
 name = "pytokens"
 version = "0.4.1"
 source = { registry = "https://pypi.org/simple" }
@@ -2368,6 +2444,15 @@ wheels = [
 ]
 
 [[package]]
+name = "text-unidecode"
+version = "1.3"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/ab/e2/e9a00f0ccb71718418230718b3d900e71a5d16e701a3dae079a21e9cd8f8/text-unidecode-1.3.tar.gz", hash = "sha256:bad6603bb14d279193107714b288be206cac565dfa49aa5b105294dd5c4aab93", size = 76885, upload-time = "2019-08-30T21:36:45.405Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/a6/a5/c0b6468d3824fe3fde30dbb5e1f687b291608f9473681bbf7dabbf5a87d7/text_unidecode-1.3-py2.py3-none-any.whl", hash = "sha256:1311f10e8b895935241623731c2ba64f4c455287888b18189350b67134a822e8", size = 78154, upload-time = "2019-08-30T21:37:03.543Z" },
+]
+
+[[package]]
 name = "threadpoolctl"
 version = "3.6.0"
 source = { registry = "https://pypi.org/simple" }
@@ -2412,6 +2497,18 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/5a/76/4921c00511f88af86a33de770d64141170f1cfd9c00311aea689949e274e/tornado-6.5.5-cp39-abi3-win32.whl", hash = "sha256:dd3eafaaeec1c7f2f8fdcd5f964e8907ad788fe8a5a32c4426fbbdda621223b7", size = 448582, upload-time = "2026-03-10T21:30:57.142Z" },
     { url = "https://files.pythonhosted.org/packages/2c/23/f6c6112a04d28eed765e374435fb1a9198f73e1ec4b4024184f21faeb1ad/tornado-6.5.5-cp39-abi3-win_amd64.whl", hash = "sha256:6443a794ba961a9f619b1ae926a2e900ac20c34483eea67be4ed8f1e58d3ef7b", size = 448990, upload-time = "2026-03-10T21:30:58.857Z" },
     { url = "https://files.pythonhosted.org/packages/b7/c8/876602cbc96469911f0939f703453c1157b0c826ecb05bdd32e023397d4e/tornado-6.5.5-cp39-abi3-win_arm64.whl", hash = "sha256:2c9a876e094109333f888539ddb2de4361743e5d21eece20688e3e351e4990a6", size = 448016, upload-time = "2026-03-10T21:31:00.43Z" },
+]
+
+[[package]]
+name = "tqdm"
+version = "4.67.3"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "colorama", marker = "sys_platform == 'win32'" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/09/a9/6ba95a270c6f1fbcd8dac228323f2777d886cb206987444e4bce66338dd4/tqdm-4.67.3.tar.gz", hash = "sha256:7d825f03f89244ef73f1d4ce193cb1774a8179fd96f31d7e1dcde62092b960bb", size = 169598, upload-time = "2026-02-03T17:35:53.048Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/16/e1/3079a9ff9b8e11b846c6ac5c8b5bfb7ff225eee721825310c91b3b50304f/tqdm-4.67.3-py3-none-any.whl", hash = "sha256:ee1e4c0e59148062281c49d80b25b67771a127c85fc9676d3be5f243206826bf", size = 78374, upload-time = "2026-02-03T17:35:50.982Z" },
 ]
 
 [[package]]
